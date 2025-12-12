@@ -1,14 +1,17 @@
-import time
 from maekawaMutex import MaekawaMutex
 from threading import Thread
-import config
+
 
 def run_algorithm():
+    """Creates the distributed system as a MaekawaMutex object and starts it."""
     maekawa_mutex = MaekawaMutex()
     maekawa_mutex.run()
 
-mutex_thread = Thread(target=run_algorithm)
-mutex_thread.start()
 
-mutex_thread.join()
-print("Done")
+if __name__ == "__main__":
+    mutex_thread = Thread(target=run_algorithm)
+    mutex_thread.start()
+
+    mutex_thread.join()
+    print("Done")
+
