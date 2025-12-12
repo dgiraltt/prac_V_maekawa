@@ -1,7 +1,7 @@
 [project]
 name = "prac-v-maekawa"
 version = "0.1.0"
-description = "Description"
+description = "Maekawa's Algorithm implementation"
 requires-python = ">=3.13"
 dependencies = [
 ]
